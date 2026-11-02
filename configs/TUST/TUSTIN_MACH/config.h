@@ -120,6 +120,9 @@
 
 #define SDIO_DEVICE                    SDIODEV_2
 #define SDIO_USE_4BIT                  1
+#define SDIO_USE_CACHE                 1
+// Absorb short card-busy intervals without losing partially encoded frames.
+#define BLACKBOX_SDCARD_BUFFER_SIZE    16384
 #define SDIO_CK_PIN                    PD6
 #define SDIO_CMD_PIN                   PD7
 #define SDIO_D0_PIN                    PB14
